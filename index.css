@@ -1,0 +1,117 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background: -webkit-repeating-linear-gradient(rgba(1, 2, 41, 0.99), rgba(0, 0, 0, 0.99));
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+    
+    
+
+}
+
+
+/* Navigation Bar */
+nav {
+    background-color: rgba(44, 44, 44, 0.459); /* Semi-transparent nav */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    backdrop-filter: blur(5px); /* Soft blur effect */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping on small screens */
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Oswald', sans-serif;
+    padding: 10px 30px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+}
+
+/* Home Banner */
+.homebanner {
+    text-align: left;
+    padding: 150px 30px;
+}
+
+/* Large Title */
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 8vw; /* Responsive font size */
+    font-weight: 500;
+    line-height: 1.1;
+    margin-bottom: 0;
+}
+
+/* Subtitle */
+h2 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 2.5vw;
+    line-height: 0.9;
+    margin-top: 20px;
+}
+
+/* Responsive Design - Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 10vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 12vw;
+    }
+
+    h2 {
+        font-size: 5vw;
+    }
+
+    nav ul li a {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+}
